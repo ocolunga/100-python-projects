@@ -1,6 +1,3 @@
-# Workspace files
-.workspace-settings/
-
 # Python
 *.pyc
 __pycache__/
