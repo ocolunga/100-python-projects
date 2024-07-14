@@ -1,0 +1,5 @@
+project_list:
+- title: P01 Band Name Generator
+    topic: D01 Working With Variables
+- title: P02 Calculator Tip
+    topic: D02 Variable Types
