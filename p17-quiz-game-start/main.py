@@ -7,4 +7,6 @@ question_bank: list = []
 for question in question_data:
     question_bank.append(Question(question["text"], question["answer"]))
 
-print(question_bank)
+quiz = QuizBrain(question_bank)
+
+quiz.next_question()
