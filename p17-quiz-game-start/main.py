@@ -11,8 +11,8 @@ if database_choice == "1":
 elif database_choice == "2":
     question_data = open_trivia_data
 
-for question in question_data:
-    question_bank.append(Question(question["question"], question["correct_answer"]))
+for question_item in question_data:
+    question_bank.append(Question(question_item["question"], question_item["correct_answer"]))
 
 quiz = QuizBrain(question_bank)
 
