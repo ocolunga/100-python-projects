@@ -10,7 +10,9 @@ class QuizBrain:
             print("You have exited the quiz.")
             return False
         if self.question_number == len(self.question_list):
-            print(f"You've completed the quiz. Final score: {self.score}/{self.question_number}")
+            print(
+                f"You've completed the quiz. Final score: {self.score}/{self.question_number}"
+            )
             return False
         return self.question_number < len(self.question_list)
 
@@ -35,4 +37,3 @@ class QuizBrain:
         print(f"The correct answer was: {correct_answer}")
         print(f"Current score: {self.score}/{self.question_number}")
         print("\n")
-
