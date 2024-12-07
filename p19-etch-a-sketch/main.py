@@ -20,6 +20,7 @@ def turn_right():
     turtle.setheading(turtle.heading() - 10)
 
 
+
 def clear_screen():
     turtle.clear()
     turtle.penup()
