@@ -7,11 +7,6 @@ dist/
 build/
 */.venv/*
 
-# VS Code
-.vscode/
-.settings/
-*.code-workspace
-
 # Miscellaneous
 .DS_Store
 
