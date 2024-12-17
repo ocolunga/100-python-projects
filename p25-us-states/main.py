@@ -20,6 +20,14 @@ while len(guessed_states) < 50:
         )
     ).title()
 
+    if answer_state == "Exit":
+        missing_states = [
+            state for state in all_states if state not in guessed_states
+        ]
+        missing_states_df = pd.DataFrame(missing_states)
+        missing_states_df.to_csv("missing_states.csv")
+        break
+
     if answer_state in all_states:
         guessed_states.append(answer_state)
         t = turtle.Turtle()
