@@ -4,6 +4,12 @@ from food import Food
 from scoreboard import Scoreboard
 import time
 
+with open("data.txt") as file:
+    file_high_score = file.read()
+    file.close()
+    
+file_high_score = int(file_high_score)
+
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -12,13 +18,14 @@ screen.tracer(0)
 
 snake = Snake()
 food = Food()
-scoreboard = Scoreboard()
+scoreboard = Scoreboard(high_score=file_high_score)
 
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
 screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
+
 
 
 game_is_on = True
